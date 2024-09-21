@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width: 768px) {
+    .gym-logo {
+        display: none;
+    }
+
+    .device-flex--prop {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.logo-facebook, .logo-instagram {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.li--icon {
+    height: 24px;
+    width: 24px;
+}
+
+.footer--bg {
+ background-color: #40444e;
+}
+
+.footer--border {
+    border-top: 3px solid #f7a600;
+}
+
+.gym-logo--footer {
+    height: 98px;
+    width: 135px;
+}

@@ -1,0 +1,76 @@
+html,
+body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    height: auto;
+    width: auto;
+}
+
+body {
+    font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.background-cover {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-image: url(gym-cover-5.png); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.title--line {
+    border-top: 2px solid #f7a600;
+    width: 3rem;
+    margin: 0px 15px;
+}
+
+.title-text {
+    color: #40444e;
+}
+
+#menu-icon {
+    height: 50px;
+    width: 50px;
+    color: #f7a600;
+}
+
+@media screen and (min-width: 768px) {
+    .blurredShadow {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.4) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        backdrop-filter: blur(200px);
+        background-color: transparent;
+    }
+}
+
+.arrow--up {
+    display: none;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 3vh;
+    bottom: 4vh;
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.show {
+    display: block;
+    transition: opacity 0.8s;
+}
+
+.home--text {
+    color: #f7a600;
+    text-shadow: 1px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.hover-boulder--orange::after {
+    background-color: #f7a600;
+}

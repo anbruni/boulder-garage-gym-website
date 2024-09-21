@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width: 240px) {
+  .header-logo-img {
+    width: 120px;
+    height: 87px;
+    object-fit: cover
+  }
+
+  .nav-links {
+    border-bottom: 3px solid #f7a600;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .small-dev-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links li:nth-child(odd) {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header-logo-img {
+    width: 152px;
+    height: 110px;
+    object-fit: cover
+  }
+
+  .nav-links {
+    border-bottom: 3px solid #f7a600;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .small-dev-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links li:nth-child(odd) {
+    text-align: left;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo-img {
+    width: 127px;
+    height: 92px;
+  }
+
+  .nav-links {
+    border: none;
+  }
+}
+
+.grey-boulder {
+  background-color: #40444e;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-logo-img {
+    width: 172px;
+    height: 124px;
+  }
+
+  .nav-links {
+    border: none;
+  }
+}
+
+.grey-boulder {
+  background-color: #40444e;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* .header-logo-img {
+    width: 177px;
+    height: 129px;
+} */
+
+.logo-text {
+  padding: 10px 0;
+}
+
+/* Tailwind CSS */
+.carousel-container {
+  @apply relative w-full h-screen overflow-hidden;
+}
+
+.carousel-slide {
+  @apply absolute w-full h-full bg-center bg-cover;
+}

@@ -1,6 +1,5 @@
 // OpeningHours.js
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 
 const OpeningHours = () => {
   const openingHoursRef = useRef(null);
@@ -15,11 +14,11 @@ const OpeningHours = () => {
       className="py-8 bg-white min-h-dvh border-section--orange bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
       ref={openingHoursRef}
     >
-      <h2 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold mb-4 text-center flex justify-center content-center items-center py-6 text-2xl sm:text-4xl md:text-4xl title-text">
+      <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold mb-4 text-center flex justify-center content-center items-center py-6 text-2xl sm:text-4xl md:text-4xl title-text">
         <span className="title--line"></span>
         Orari di apertura
         <span className="title--line"></span>
-      </h2>
+      </h1>
       <div className="flex flex-col items-center pb-8 sd:mx-3 md:mx-6 lg:mx-8 animate-slidein opacity-0 [--slidein-delay:1200ms]">
         {/* Tabella orizzontale */}
         <div className="hidden sm:block overflow-x-auto w-full rounded-2xl shadow-2xl border-2 border-gray-300">

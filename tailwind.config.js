@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "cover-img": "url('./gym-cover-1.png')",
+        "cover-img": "url('./gym-cover-1.webp')",
         logo: "url(./gym-logo-grey.png)",
       },
       screens: {

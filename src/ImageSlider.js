@@ -1,4 +1,4 @@
-import { React, useState, useEffect, useRef, useContext } from "react";
+import { React, useState, useEffect } from "react";
 import "./ImageSlider.css";
 
 export default function ImageSlider({ children: slides, autoSlide = false, autoSlideInterval = 5000 }) {

@@ -1,12 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Link,
-  useLocation,
+  Routes
 } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -68,13 +65,13 @@ const Home = () => {
       id="lapalestra"
       className="py-8 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] min-h-dvh border-section--orange"
     >
-      <h2 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6">
+      <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6">
         <span className="title--line"></span>
         <span className="text-xl md:text-2xl lg:text-3xl title-text">
           Boulder Gym Cumiana
         </span>
         <span className="title--line"></span>
-      </h2>
+      </h1>
       <h5 className="animate-slidein opacity-0 [--slidein-delay:1200ms] pb-5 px-8 md:px-16 lg:px-24">
         Dove abbiamo iniziato
       </h5>

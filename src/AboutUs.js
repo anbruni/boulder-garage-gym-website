@@ -8,21 +8,21 @@ const AboutUs = () => {
 
   const personas = {
     persona1: {
-      photo: "gym-cover-1.png",
+      photo: "gym-cover-5.webp",
       role: "Allenatore",
       name: "Stefano Bruni",
       about: `Occaecat laboris occaecat est Lorem eu anim minim laboris et. Sunt eu dolor enim excepteur amet ad nulla qui est dolore aliquip est veniam. Amet ea officia consectetur nostrud aliquip excepteur dolore sunt officia et ipsum aute.
               Elit adipisicing sint nisi excepteur est labore ea tempor et cupidatat esse enim.`,
     },
     persona2: {
-      photo: "gym-cover-2.png",
+      photo: "gym-cover-5.webp",
       role: "Capo Allenatore",
       name: "Andrea Bruni",
       about: `Occaecat laboris occaecat est Lorem eu anim minim laboris et. Sunt eu dolor enim excepteur amet ad nulla qui est dolore aliquip est veniam. Amet ea officia consectetur nostrud aliquip excepteur dolore sunt officia et ipsum aute.
               Elit adipisicing sint nisi excepteur est labore ea tempor et cupidatat esse enim.`,
     },
     persona3: {
-      photo: "gym-cover-3.png",
+      photo: "gym-cover-5.webp",
       role: "Allenatore",
       name: "Gianni Bruni",
       about: `Occaecat laboris occaecat est Lorem eu anim minim laboris et. Sunt eu dolor enim excepteur amet ad nulla qui est dolore aliquip est veniam. Amet ea officia consectetur nostrud aliquip excepteur dolore sunt officia et ipsum aute.
@@ -41,11 +41,11 @@ const AboutUs = () => {
       ref={aboutUsRef}
     >
       <div className="container mx-auto">
-        <h2 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold mb-4 text-center flex justify-center content-center items-center py-6 text-2xl sm:text-4xl md:text-4xl title-text">
+        <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6 text-2xl sm:text-4xl md:text-4xl title-text">
           <span className="title--line"></span>
           Chi siamo
           <span className="title--line"></span>
-        </h2>
+        </h1>
         <p className="animate-slidein opacity-0 [--slidein-delay:1100ms] px-10 mb-10">
           Occaecat excepteur non fugiat aute pariatur pariatur cillum. Consequat
           irure esse consequat non enim. In esse esse officia qui cupidatat

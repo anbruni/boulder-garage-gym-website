@@ -1,7 +1,6 @@
 // Footer.js
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -45,10 +44,12 @@ function Footer() {
         </div>
         <div className="flex md:justify-around sm:justify-center gap-4 md:flex-col sd:flex-row">
           <div>
-            <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+            <ion-icon class="logo-facebook" name="logo-facebook" loading="lazy"></ion-icon>
           </div>
           <div>
-            <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
+            <a href="https://www.instagram.com/boulder__garage/">
+              <ion-icon class="logo-instagram" name="logo-instagram" loading="lazy"></ion-icon>
+            </a>
           </div>
         </div>
       </div>

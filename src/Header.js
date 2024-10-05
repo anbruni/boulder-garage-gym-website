@@ -24,23 +24,35 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
 
   const slides = [
     {
-      url: `gym-cover-1.png`,
+      url: `gym-cover-1.webp`,
       title: "Questa foto e' stata scattata da Andrea",
     },
     {
-      url: "gym-cover-2.png",
+      url: "gym-cover-2.webp",
       title: "Questa foto e' stata scattata da Luca",
     },
     {
-      url: "gym-cover-3.png",
+      url: "gym-cover-3.webp",
       title: "Questa foto e' stata scattata da Gianmatteo",
     },
+    // {
+    //   url: "gym-cover-4.webp",
+    //   title: "Questa foto e' stata scattata da Settembrino",
+    // },
     {
-      url: "gym-cover-4.png",
-      title: "Questa foto e' stata scattata da Settembrino",
+      url: "gym-cover-5.webp",
+      title: "Questa foto e' stata scattata da Marco Antonio",
     },
     {
-      url: "gym-cover-5.png",
+      url: "gym-cover-6.webp",
+      title: "Questa foto e' stata scattata da Marco Antonio",
+    },
+    {
+      url: "gym-cover-7.webp",
+      title: "Questa foto e' stata scattata da Marco Antonio",
+    },
+    {
+      url: "gym-cover-8.webp",
       title: "Questa foto e' stata scattata da Marco Antonio",
     },
   ];

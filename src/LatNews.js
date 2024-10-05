@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import ReactDOM from 'react-dom'
 import { getNews } from "./components/News";
 
 const LatNews = () => {
@@ -10,15 +9,6 @@ const LatNews = () => {
     useEffect(() => {
         latNews.current.scrollIntoView({ behavior: "smooth" });
     }, []);
-
-    // let orderedNews = getNews[currYear].sort((a, b) => b.month - a.month)
-    //     .map(monthOrd => {
-    //         monthOrd.dayNews.sort((a, b) => b.day - a.day);
-    //         return {
-    //             ...monthOrd
-    //         }
-    //     })
-    // console.log(orderedNews, "orderedNews222")
 
     const sortedNews = {
         2024: getNews[2024]
@@ -49,11 +39,11 @@ const LatNews = () => {
             ref={latNews}
         >
             <div className="container mx-auto">
-                <h2 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold mb-2 text-center flex justify-center content-center items-center py-6 pb-4 text-2xl sm:text-4xl md:text-4xl title-text">
+                <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold mb-2 text-center flex justify-center content-center items-center py-6 pb-4 text-2xl sm:text-4xl md:text-4xl title-text">
                     <span className="title--line"></span>
                     News
                     <span className="title--line"></span>
-                </h2>
+                </h1>
                 <p className="animate-slidein opacity-0 [--slidein-delay:1000ms] px-8 md:px-16 lg:px-24 mb-6 font-bold">Ecco le nostre ultime news! per ulteriori aggiornamenti e notizie seguici sulla nostra pagina Instagram</p>
                 <div className="animate-slidein opacity-0 [--slidein-delay:1200ms] px-8 md:px-16 lg:px-24">
                     <div className="bg-sky-500 rounded-md text-white px-4 py-1 w-fit text-xl md:text-2xl lg:text-3xl mb-3">{currYear}</div>

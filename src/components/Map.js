@@ -2,10 +2,8 @@ import React from "react";
 
 const LocationMap = () => {
   return (
-    <iframe
+    <iframe title="This is our location map"
       className="mx-auto border-2 rounded-2xl shadow-2xl"
-      // width="100%"
-      //   height="100px"
       style={{ width: "90%", height: 580, marginBottom: "40px" }}
       loading="lazy"
       allowFullscreen

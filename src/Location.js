@@ -1,6 +1,5 @@
 // Location.js
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import LocationMap from "./components/Map";
 
 const Location = () => {
@@ -17,13 +16,13 @@ const Location = () => {
       ref={locationRef}
     >
       <div className="container mx-auto">
-        <h2 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6">
+        <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6">
           <span className="title--line"></span>
           <span className="text-xl md:text-2xl lg:text-3xl title-text">
             Dove Siamo
           </span>
           <span className="title--line"></span>
-        </h2>
+        </h1>
         <div className="animate-slidein opacity-0 [--slidein-delay:1100ms]">
           <LocationMap></LocationMap>
           <div className="px-8 md:px-16 lg:px-24">

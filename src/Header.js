@@ -1,8 +1,9 @@
 //Header
 import React from "react";
+import LazyLoad from 'react-lazy-load';
 import { Link } from "react-router-dom";
-import "./index.css";
-import "./Header.css";
+import "./style/index.css";
+import "./style/Header.css";
 import ImageSlider from "./ImageSlider";
 
 const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
@@ -60,25 +61,41 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
   return (
     <div className="background-cover">
       <ImageSlider autoSlide={true}>
-        {slides.map((s, index) => (
-          <div
-            key={index}
-            className="w-full h-screen bg-center bg-cover"
-            style={{ backgroundImage: `url(${s.url})` }}
-          >
+        {/* {slides.map((s, index) => (
+          // <div
+          //   key={index}
+          //   className="w-full h-screen bg-center bg-cover"
+          //   style={{ backgroundImage: `url(${s.url})` }}
+          // >
+          <div>
+            <img src={s.url} alt={index} loading="lazy" />
             <div className="absolute w-full bottom-14 sd:bottom-10 md:bottom-20 lg:bottom-24">
               <div className="flex items-center justify-center bg-transparent overflow-hidden">
                 <p className="p-2 px-5 lg:inline bg-gray-100 z-10 max-w-max w-3/4 text-sm py-2 mt-2 text-center rounded-lg text-lg text-gym-gray opacity-90">{s.title}</p>
               </div>
             </div>
           </div>
+        ))} */}
+        {slides.map((s, index) => (
+          <LazyLoad key={index} height="400px" offsetVertical={300}>
+            <div
+              className="w-full h-screen bg-center bg-cover"
+              style={{ backgroundImage: `url(${s.url})` }}
+            >
+              <div className="absolute w-full bottom-14 sd:bottom-10 md:bottom-20 lg:bottom-24">
+                <div className="flex items-center justify-center bg-transparent overflow-hidden">
+                  <p className="p-2 px-5 lg:inline bg-gray-100 z-10 max-w-max w-3/4 text-sm py-2 mt-2 text-center rounded-lg text-lg text-gym-gray opacity-90">{s.title}</p>
+                </div>
+              </div>
+            </div>
+          </LazyLoad>
         ))}
       </ImageSlider>
       <section className="header-container bg-opacity-30 ">
         <header className="md:h-dvh grey-boulder md:py-0 lg:py-4 w-full z-20 top-0 start-0 relative md:bg-transparent">
           <div className="md:sticky px-3.5 sm:px-0 md:px-0 lg:px-0 py-3.5 top-0 appearance-none font-semibold flex justify-between items-center md:items-start mx-auto sm:w-[92%] md:w-[92%] lg:w-[90%] sd:grey-boulder">
             <div className="flex flex-col">
-              <div className="bg-[url('./gym-logo-orange.png')] bg-cover header-logo-img max-w-full"></div>
+              <div className="bg-[url('./gym-logo-orange.webp')] bg-cover header-logo-img max-w-full"></div>
               <span className="hidden lg:inline bg-gray-100 z-10 max-w-full text-sm py-2 mt-2 text-center rounded-xl text-gym-gray opacity-90">
                 Palestra di arrampicata
               </span>
@@ -91,7 +108,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                     className="home--text relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                     onClick={() => scrollToSection("lapalestra")}
                   >
-                    La palestra
+                    LA PALESTRA
                   </Link>
                 </li>
                 <li className="">
@@ -100,7 +117,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                     className="text-white relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                     onClick={() => scrollToSection("chisiamo")}
                   >
-                    Chi siamo
+                    CHI SIAMO
                   </Link>
                 </li>
                 <li>
@@ -109,7 +126,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                     className="text-white relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                     onClick={() => scrollToSection("dovesiamo")}
                   >
-                    Dove siamo
+                    DOVE SIAMO
                   </Link>
                 </li>
                 <li>
@@ -118,7 +135,16 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                     className="text-white relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                     onClick={() => scrollToSection("orariapertura")}
                   >
-                    Orari
+                    ORARI & TARIFFE
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/corsi"
+                    className="text-white relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+                    onClick={() => scrollToSection("corsi")}
+                  >
+                    CORSI
                   </Link>
                 </li>
                 <li>
@@ -127,7 +153,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                     className="text-white relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                     onClick={() => scrollToSection("news")}
                   >
-                    News
+                    NEWS
                   </Link>
                 </li>
                 <li>
@@ -136,7 +162,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                     className="text-white relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                     onClick={() => scrollToSection("contatti")}
                   >
-                    Contatti
+                    CONTATTI
                   </Link>
                 </li>
               </ul>

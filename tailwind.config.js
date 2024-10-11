@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "cover-img": "url('./gym-cover-1.webp')",
-        logo: "url(./gym-logo-grey.png)",
+        logo: "url(./gym-logo-grey.webp)",
       },
       screens: {
         xm: "480px",

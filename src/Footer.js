@@ -1,6 +1,6 @@
 // Footer.js
 import React from "react";
-import "./Footer.css";
+import "./style/Footer.css";
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
         <span className="title--line"></span>
       </h2>
       <div className="px-6 gap-6 flex md:text-xl md:justify-center md:items-center md:text-center md:gap-x-16 sm:gap-x-1 justify-between device-flex--prop">
-        <div className="bg-[url('./gym-logo-orange.png')] bg-cover gym-logo gym-logo--footer"></div>
+        <div className="bg-[url('./gym-logo-orange.webp')] bg-cover gym-logo gym-logo--footer"></div>
         <div className="flex flex-col">
           <ul className="text-left flex flex-col gap-y-3">
             <li className="flex content-center items-center gap-x-3">
@@ -23,7 +23,7 @@ function Footer() {
             </li>
             <li className="flex content-center items-center gap-x-3">
               <ion-icon class="li--icon" name="map-outline"></ion-icon>
-              Via Dove Siamo Noi 2A, Cumiana, TO - 10047
+              Via Giusto Lanteri, Cumiana, TO - 10047
             </li>
             <li className="flex content-center items-center gap-x-3">
               <ion-icon class="li--icon" name="call-outline"></ion-icon>
@@ -38,6 +38,7 @@ function Footer() {
                 class="li--icon"
                 name="accessibility-outline"
               ></ion-icon>
+              SSD Boulder Garage <br />
               P.IVA: 1234567890
             </li>
           </ul>
@@ -47,7 +48,7 @@ function Footer() {
             <ion-icon class="logo-facebook" name="logo-facebook" loading="lazy"></ion-icon>
           </div>
           <div>
-            <a href="https://www.instagram.com/boulder__garage/">
+            <a href="https://www.instagram.com/boulder__garage/" aria-label="Visita la nostra pagina Instagram">
               <ion-icon class="logo-instagram" name="logo-instagram" loading="lazy"></ion-icon>
             </a>
           </div>

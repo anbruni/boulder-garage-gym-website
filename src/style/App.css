@@ -36,12 +36,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.border-section--orange{
+.border-section--orange {
   border-top: 3px solid #f7a600;
 }
 
@@ -51,14 +52,14 @@
   position: relative;
 }
 
-.create::before{
+.create::before {
   content: "";
-  display:block;
-background-image: url('./gym-logo-grey.png');
-background-size: contain;
-background-repeat: no-repeat;
-width: 10rem;
-    height: 6rem;
-    float: left;
-    margin-right: 10px;
+  display: block;
+  background-image: url('./gym-logo-grey.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 6rem;
+  float: left;
+  margin-right: 10px;
 }

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./style/App.css";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -68,13 +68,13 @@ const Home = () => {
       <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6">
         <span className="title--line"></span>
         <span className="text-xl md:text-2xl lg:text-3xl title-text">
-          Boulder Gym Cumiana
+          Boulder Garage <br /> Palestra di arrampicata
         </span>
         <span className="title--line"></span>
       </h1>
-      <h5 className="animate-slidein opacity-0 [--slidein-delay:1200ms] pb-5 px-8 md:px-16 lg:px-24">
+      <h2 className="animate-slidein opacity-0 [--slidein-delay:1200ms] pb-5 px-8 md:px-16 lg:px-24">
         Dove abbiamo iniziato
-      </h5>
+      </h2>
       <div className=" animate-slidein opacity-0 [--slidein-delay:1200ms] create px-8 md:px-16 lg:px-24">
         Ut nostrud veniam veniam elit. Proident irure ullamco et nostrud. Ad
         veniam occaecat ipsum qui nulla et esse. Ad consequat magna proident

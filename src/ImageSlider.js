@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import "./ImageSlider.css";
+import "./style/ImageSlider.css";
 
 export default function ImageSlider({ children: slides, autoSlide = false, autoSlideInterval = 5000 }) {
   const [curr, setCurr] = useState(0)
@@ -25,10 +25,10 @@ export default function ImageSlider({ children: slides, autoSlide = false, autoS
         ))}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button onClick={prev} className="left-arrow">
+        <button onClick={prev} className="left-arrow" alt="immagine precedente">
           <ion-icon name="chevron-back-outline" size={70}></ion-icon>
         </button>
-        <button onClick={next} className="right-arrow">
+        <button onClick={next} className="right-arrow" alt="prossima immagine">
           <ion-icon name="chevron-forward-outline" size={70}></ion-icon>
         </button>
       </div>

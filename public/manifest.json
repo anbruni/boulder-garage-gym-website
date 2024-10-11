@@ -3,7 +3,7 @@
   "name": "Boulder Garage - Palestra di arrampicata. Sito ufficiale",
   "icons": [
     {
-      "src": "./src/gym-logo-grey.png",
+      "src": "./src/gym-logo-grey.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

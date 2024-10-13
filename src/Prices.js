@@ -123,11 +123,11 @@ const Prices = () => {
                                 { name: 'Ridotto (Under 16 & over 65)', prices: ['€ 40', '€ 125', '€ 200', '€ 320'] },
                             ].map((row, index) => (
                                 <tr key={index} className="border-t">
-                                    <td className="pl-2 md:pl-6 pr-1 py-4 text-m md:text-l font-medium text-gray-900">
+                                    <td className="pl-2 md:pl-6 pr-1 py-4 text-sm md:text-base font-baseedium text-gray-900">
                                         {row.name}
                                     </td>
                                     {row.prices.map((price, i) => (
-                                        <td key={i} className="px-1 py-4 text-m md:text-l text-gray-700 text-center">
+                                        <td key={i} className="px-1 py-4 text-sm md:text-base text-gray-700 text-center">
                                             {price}
                                         </td>
                                     ))}

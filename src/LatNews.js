@@ -10,6 +10,8 @@ const LatNews = () => {
         latNews.current.scrollIntoView({ behavior: "smooth" });
     }, []);
 
+    console.log(latNews);
+
     const sortedNews = {
         2024: getNews[2024]
             // Sort by month (ascending order)
@@ -51,8 +53,8 @@ const LatNews = () => {
                         <div key={index} className="mb-16">
                             <label className="font-bold text-gym-orange mb-4 flex justify-center content-center items-center text-xl sm:text-2xl md:text-2xl pt-0">{news.monthText}</label>
                             <div className="flex flex-col items-start gap-8 items-center ps-10">
-                                {dayNews[index].map((todayNews) => (
-                                    <div className="flex gap-3 mr-auto items-center">
+                                {dayNews[index].map((todayNews, index) => (
+                                    <div key={index} className="flex gap-3 mr-auto items-center">
                                         <div className="relative bg-gym-orange font-bold text-gym-grey w-14 h-14 py-4 px-4 text-center rounded-md pt-6">{todayNews.day}
                                             <div className="absolute bg-gym-gray text-gym-orange rounded-t-md top-0 left-0 right-0 mx-0 py-0">{todayNews.dayText}</div>
                                         </div>

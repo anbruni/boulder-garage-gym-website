@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .header-logo-img {
     width: 152px;
     height: 110px;
@@ -47,7 +47,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .header-logo-img {
     width: 127px;
     height: 92px;
@@ -56,7 +56,7 @@
   .nav-links {
     border: none;
   }
-}
+} */
 
 .grey-boulder {
   background-color: #40444e;

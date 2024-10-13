@@ -11,6 +11,7 @@ import OpeningHours from "./OpeningHours";
 import AboutUs from "./AboutUs";
 import Location from "./Location";
 import LatNews from "./LatNews";
+import Courses from "./Courses";
 
 function App() {
   const scrollToSection = (id) => {
@@ -50,6 +51,11 @@ function App() {
                 element={<LatNews />}
                 component={LatNews}
               />
+              <Route
+                path="/corsi"
+                element={<Courses />}
+                component={Courses}
+              />
             </Routes>
           </main>
           <Footer />
@@ -63,7 +69,7 @@ const Home = () => {
   return (
     <section
       id="lapalestra"
-      className="py-8 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] min-h-dvh border-section--orange"
+      className="md:py-8 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] min-h-dvh border-section--orange"
     >
       <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6">
         <span className="title--line"></span>

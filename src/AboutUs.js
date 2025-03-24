@@ -9,21 +9,21 @@ const AboutUs = () => {
   const personas = {
     persona1: {
       photo: "gym-cover-5.webp",
-      role: "Allenatore",
+      role: "Staff",
       name: "Stefano Bruni",
       about: `Occaecat laboris occaecat est Lorem eu anim minim laboris et. Sunt eu dolor enim excepteur amet ad nulla qui est dolore aliquip est veniam. Amet ea officia consectetur nostrud aliquip excepteur dolore sunt officia et ipsum aute.
               Elit adipisicing sint nisi excepteur est labore ea tempor et cupidatat esse enim.`,
     },
     persona2: {
       photo: "gym-cover-5.webp",
-      role: "Capo Allenatore",
+      role: "Staff",
       name: "Andrea Bruni",
       about: `Occaecat laboris occaecat est Lorem eu anim minim laboris et. Sunt eu dolor enim excepteur amet ad nulla qui est dolore aliquip est veniam. Amet ea officia consectetur nostrud aliquip excepteur dolore sunt officia et ipsum aute.
               Elit adipisicing sint nisi excepteur est labore ea tempor et cupidatat esse enim.`,
     },
     persona3: {
       photo: "gym-cover-5.webp",
-      role: "Allenatore",
+      role: "Staff",
       name: "Gianni Bruni",
       about: `Occaecat laboris occaecat est Lorem eu anim minim laboris et. Sunt eu dolor enim excepteur amet ad nulla qui est dolore aliquip est veniam. Amet ea officia consectetur nostrud aliquip excepteur dolore sunt officia et ipsum aute.
               Elit adipisicing sint nisi excepteur est labore ea tempor et cupidatat esse enim.`,

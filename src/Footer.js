@@ -27,11 +27,11 @@ function Footer() {
             </li>
             <li className="flex content-center items-center gap-x-3">
               <ion-icon class="li--icon" name="call-outline"></ion-icon>
-              333 444444
+              393 0876268
             </li>
             <li className="flex content-center items-center gap-x-3">
               <ion-icon class="li--icon" name="globe-outline"></ion-icon>
-              info@bouldergarage.com
+              bouldergarage2024@gmail.com
             </li>
             <li className="flex content-center items-center gap-x-3">
               <ion-icon
@@ -39,14 +39,11 @@ function Footer() {
                 name="accessibility-outline"
               ></ion-icon>
               SSD Boulder Garage <br />
-              P.IVA: 1234567890
+              P.IVA: 13049040010
             </li>
           </ul>
         </div>
         <div className="flex md:justify-around sm:justify-center gap-4 md:flex-col sd:flex-row">
-          <div>
-            <ion-icon class="logo-facebook" name="logo-facebook" loading="lazy"></ion-icon>
-          </div>
           <div>
             <a href="https://www.instagram.com/boulder__garage/" aria-label="Visita la nostra pagina Instagram">
               <ion-icon class="logo-instagram" name="logo-instagram" loading="lazy"></ion-icon>

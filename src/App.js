@@ -12,6 +12,7 @@ import AboutUs from "./AboutUs";
 import Location from "./Location";
 import LatNews from "./LatNews";
 import Courses from "./Courses";
+import LazyLoad from "react-lazy-load";
 
 function App() {
   const scrollToSection = (id) => {
@@ -69,7 +70,7 @@ const Home = () => {
   return (
     <section
       id="lapalestra"
-      className="md:py-8 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] min-h-dvh border-section--orange"
+      className="md:py-8 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] border-section--orange"
     >
       <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold text-center flex justify-center content-center items-center py-6">
         <span className="title--line"></span>
@@ -78,21 +79,28 @@ const Home = () => {
         </span>
         <span className="title--line"></span>
       </h1>
-      <h2 className="animate-slidein opacity-0 [--slidein-delay:1200ms] pb-5 px-8 md:px-16 lg:px-24">
+      {/* <h2 className="animate-slidein opacity-0 [--slidein-delay:1200ms] pb-5 px-8 md:px-16 lg:px-24">
         Dove abbiamo iniziato
-      </h2>
-      <div className=" animate-slidein opacity-0 [--slidein-delay:1200ms] create px-8 md:px-16 lg:px-24">
-        Ut nostrud veniam veniam elit. Proident irure ullamco et nostrud. Ad
-        veniam occaecat ipsum qui nulla et esse. Ad consequat magna proident
-        magna cillum reprehenderit nulla deserunt cillum voluptate laborum
-        pariatur. Deserunt deserunt dolore pariatur proident proident cillum
-        duis in sint ad irure voluptate. Velit minim exercitation exercitation
-        amet nulla elit nostrud eiusmod non id. Fugiat ea consectetur cillum
-        minim sunt do ea velit quis officia ipsum ad. Aliqua labore irure cillum
-        non ullamco labore qui consequat. Labore non velit eu excepteur officia
-        tempor enim ex esse velit aliquip quis excepteur. Labore consectetur
-        tempor elit pariatur amet exercitation ad veniam sit voluptate Lorem
-        cupidatat quis.
+      </h2> */}
+      <div className="lg:flex">
+      {/* <LazyLoad key="12" height="400px" offsetVertical={300}> */}
+        <img className="hidden lg:block lg:bg-center lg:bg-cover w-full ml-8" style={{ backgroundImage: `url(gym-cover-3.webp)`, maxWidth: `30%`}}></img>
+        {/* </LazyLoad> */}
+        <div>
+        <p className="animate-slidein opacity-0 [--slidein-delay:1200ms] create px-8 md:px-16 lg:px-24">
+        <b>Boulder Garage</b> è una palestra di <b>arrampicata sportiva</b> affiliata F.A.S.I e A.S.I. <br /> 
+        Nasce nel 2024 a <b>Cumiana</b> in provincia di <b>Torino</b> e, più precisamente, a metà strada tra il capoluogo piemontese e il comune di <b>Pinerolo</b>.
+        La palestra, situata all’interno dell’ex bocciofila cittadina, si inserisce nel contesto già avviato del Circolo Sportivo Menna, andandone ad arricchire la già ampia offerta.
+        L’ampio locale, completamente rinnovato, offre più di 300 metri quadri di superficie arrampicabile così suddivisi: ampia area boulder, area circuiti, Kilterboard, muro didattico e Pan Gullich. 
+        Completano il tutto una zona dedicata a riscaldamento e potenziamento, spalti e bar al piano superiore.
+        </p>
+        <p className="animate-slidein opacity-0 [--slidein-delay:1400ms] px-8 md:px-16 lg:px-24 mt-10">
+        Crediamo fortemente nel valore formativo e didattico del meraviglioso sport dell’arrampicata sportiva e abbiamo voluto cogliere l’occasione di portarlo anche fuori dai contesti maggiormente urbanizzati, per creare un ambiente di sana aggregazione che possa diventare un punto di riferimento per la comunità Cumianese e per la comunità arrampicatoria in generale.
+        </p>
+        <p className="animate-slidein opacity-0 [--slidein-delay:1400ms] px-8 md:px-16 lg:px-24 mt-10 mb-24">
+        Il team del Boulder Garage mette impegno e dedizione in questo audace progetto con l’obiettivo di soddisfare le esigenze di tutti i climbers, dai neofiti dell’arrampicata ai climbers più esigenti attraverso rinnovo periodico della tracciatura, corsi didattici per <b>bambini e adulti</b>, eventi sportivi agonistici e non, promozione dello sport all’interno del territorio e molto altro ancora.
+        </p>
+        </div>
       </div>
     </section>
   );

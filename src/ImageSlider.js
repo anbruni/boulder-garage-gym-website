@@ -26,10 +26,10 @@ export default function ImageSlider({ children: slides, autoSlide = false, autoS
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button onClick={prev} className="left-arrow z-10" aria-label="immagine precedente">
-          <ion-icon name="chevron-back-outline" size={70} class="z-10"></ion-icon>
+          <ion-icon name="chevron-back-outline" size={70} class="z-50"></ion-icon>
         </button>
         <button onClick={next} className="right-arrow z-10" aria-label="prossima immagine">
-          <ion-icon name="chevron-forward-outline" size={70} class="z-10"></ion-icon>
+          <ion-icon name="chevron-forward-outline" size={70} class="z-50"></ion-icon>
         </button>
       </div>
       <div className="absolute bottom-4 right-0 left-0">

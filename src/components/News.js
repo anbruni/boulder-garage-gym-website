@@ -1,7 +1,7 @@
 export const getNews = {
-    2024: [
+    2025: [
         {
-            year: 2024,
+            year: 2025,
             month: 10,
             monthText: "Ottobre",
             dayNews: [
@@ -23,7 +23,7 @@ export const getNews = {
             ]
         },
         {
-            year: 2024,
+            year: 2025,
             month: 11,
             monthText: "Novembre",
             dayNews: [

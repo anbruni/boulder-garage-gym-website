@@ -13,14 +13,11 @@ const LatNews = () => {
     console.log(latNews);
 
     const sortedNews = {
-        2024: getNews[2024]
-            // Sort by month (ascending order)
+        2025: getNews[2025]
             .sort((a, b) => b.month - a.month)
             .map(monthObject => {
-                // For each month, sort the dayNews array by day in descending order
                 const sortedDayNews = monthObject.dayNews.sort((a, b) => b.day - a.day);
 
-                // Return the updated month object with sorted dayNews
                 return {
                     ...monthObject,
                     dayNews: sortedDayNews
@@ -46,13 +43,13 @@ const LatNews = () => {
                     News
                     <span className="title--line"></span>
                 </h1>
-                <p className="animate-slidein opacity-0 [--slidein-delay:1000ms] px-8 md:px-16 lg:px-24 mb-6 font-bold">Ecco le nostre ultime news! per ulteriori aggiornamenti e notizie seguici sulla nostra pagina Instagram</p>
+                <p className="animate-slidein opacity-0 [--slidein-delay:1000ms] px-8 md:px-16 lg:px-24 mb-6 font-bold">Ecco le nostre ultime news! per ulteriori aggiornamenti e notizie seguici sulla nostra pagina <a class="text-gym-orange" href="https://www.instagram.com/boulder__garage/" aria-label="Visita la nostra pagina Instagram">Instagram</a></p>
                 <div className="animate-slidein opacity-0 [--slidein-delay:1200ms] px-8 md:px-16 lg:px-24">
                     <div className="bg-sky-500 rounded-md text-white px-4 py-1 w-fit text-xl md:text-2xl lg:text-3xl mb-3">{currYear}</div>
                     {sortedNews[currYear].map((news, index) => (
                         <div key={index} className="mb-16">
                             <label className="font-bold text-gym-orange mb-4 flex justify-center content-center items-center text-xl sm:text-2xl md:text-2xl pt-0">{news.monthText}</label>
-                            <div className="flex flex-col items-start gap-8 items-center ps-10">
+                            <div className="flex flex-col items-start gap-8 items-center">
                                 {dayNews[index].map((todayNews, index) => (
                                     <div key={index} className="flex gap-3 mr-auto items-center">
                                         <div className="relative bg-gym-orange font-bold text-gym-grey w-14 h-14 py-4 px-4 text-center rounded-md pt-6">{todayNews.day}

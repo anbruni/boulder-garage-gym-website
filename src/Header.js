@@ -76,7 +76,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
         ))}
       </ImageSlider>
       <section className="header-container bg-opacity-30 ">
-        <header className="lg:h-dvh grey-boulder lg:py-4 w-full z-20 top-0 start-0 relative lg:bg-transparent">
+        <header className="lg:h-dvh grey-boulder lg:py-4 w-full z-1 top-0 start-0 relative lg:bg-transparent">
           <div className="md:sticky px-3.5 lg:px-0 py-3.5 top-0 appearance-none font-semibold flex justify-between items-center lg:items-start md:w-full lg:mx-auto w-full lg:w-[90%] md:grey-boulder">
             <div className="flex flex-col">
               <div className="bg-[url('./gym-logo-orange.webp')] bg-cover header-logo-img max-w-full"></div>

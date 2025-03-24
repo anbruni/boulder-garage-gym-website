@@ -42,36 +42,41 @@ const Courses = () => {
                         <tbody>
                             <tr className="border">
                                 <td className="sticky left-0 px-6 py-4 text-gray-900 border bg-gym-orange sm:w-2.5 md:w-1/5 md:text-xl"><span className="font-bold">4-6 anni</span> <br></br>(1 lezione/sett.) 45'</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
                                 <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">16:00 - 17:00</td>
                                 <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
                             </tr>
                             <tr className="border-t">
                                 <td className="sticky left-0 px-6 py-4 text-gray-900 border bg-gym-orange sm:w-2.5 md:w-1/5 md:text-xl"><span className="font-bold">7-9 anni</span><br></br> (1 lezione/sett.) 1h</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">16:00 - 17:00</td>
                                 <td className="px-2 py-4 text-gray-700 border text-center">18:00 - 19:00</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
                                 <td className="px-2 py-4 text-gray-700 border text-center">18:00 - 19:00</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
                             </tr>
                             <tr className="border-t">
                                 <td className="sticky left-0 px-6 py-4 text-gray-900 border bg-gym-orange sm:w-2.5 md:w-1/5 md:text-xl"><span className="font-bold">10-13 anni</span><br></br> (2 lezioni/sett.) 1h</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
                             </tr>
                             <tr className="border-t">
                                 <td className="sticky left-0 px-6 py-4 text-gray-900 border bg-gym-orange sm:w-2.5 md:w-1/5 md:text-xl"><span className="font-bold">14-18 anni</span><br></br> (2 lezioni/sett.) 1h</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
-                                <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center">17:00 - 18:00</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">18:00 - 19:00</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">18:00 - 19:00</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">18:00 - 19:00</td>
                             </tr>
                             <tr className="border-t">
                                 <td className="sticky left-0 px-6 py-4 text-gray-900 border bg-gym-orange rounded-bl-2xl sm:w-2.5 md:w-1/5 md:text-xl"><span className="font-bold">Adulti</span><br></br> (1-2 lezioni/sett.) 1h30'</td>
-                                <td className="px-2 py-4 text-gray-700 border text-center"></td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
                                 <td className="px-2 py-4 text-gray-700 border text-center">20:00 - 21:30</td>
+                                <td className="px-2 py-4 text-gray-700 border text-center">-</td>
                                 <td className="px-2 py-4 text-gray-700 border text-center">20:00 - 21:30</td>
                                 <td className="px-2 py-4 text-gray-700 border text-center">20:00 - 21:30</td>
                             </tr>

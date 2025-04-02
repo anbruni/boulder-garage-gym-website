@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="index.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        >
-        <link rel="manifest" href="/site.webmanifest">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#000000">
-        <title>Boulder Garage | Palestra di arrampicata e Boulder a Cumiana, Torino</title>
-        <meta name="description" content="Vieni a divertirti in Boulder Garage, palestra di arrampicata e boulder a Cumiana, Torino. Offriamo corsi per principianti e avanzati, allenamenti personalizzati e un ambiente sicuro e accogliente per tutti gli appassionati di arrampicata.">
-        <meta name="keywords" content="palestra di arrampicata, boulder, arrampicata indoor, arrampicata sportiva, palestra boulder Torino, corsi di arrampicata, arrampicata Cumiana, arrampicata Torino, corsi arrampicata bambini, competizioni di arrampicata, workshop arrampicata, bouldering contest, lezioni di arrampicata, allenamento arrampicata, benefici arrampicata, parete di arrampicata, crash pad arrampicata, allenamento fingerboard, arrampicata lead, arrampicata trad, arrampicata su pannello, arrampicata boulder per principianti">
-        <meta name="author" content="Andrea Bruni">
-        <!-- Viewport Meta Tag for Responsive Design -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Open Graph / Facebook Meta Tags -->
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Boulder Garage | Palestra di arrampicata e Boulder a Cumiana, Torino">
-        <meta property="og:description" content="Vieni a divertirti in Boulder Garage, palestra di arrampicata e boulder a Cumiana (Torino).">
-        <meta property="og:url" content="https://bouldergarage.it">
-        <meta property="og:image" content="https://bouldergarage.it/path/to/gym-cover-1.webp">
-        <meta property="og:image:alt" content="Logo della palestra e muro di arrampicata in background">
-        <meta property="og:site_name" content="Boulder Garage | Palestra di arrampicata e Boulder a Cumiana, Torino">
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png">
-        <!--
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>
+      Boulder Garage | Palestra di arrampicata e Boulder a Cumiana, Torino
+    </title>
+    <meta
+      name="description"
+      content="Vieni a divertirti in Boulder Garage, palestra di arrampicata e boulder a Cumiana, Torino. Offriamo corsi per principianti e avanzati, allenamenti personalizzati e un ambiente sicuro e accogliente per tutti gli appassionati di arrampicata."
+    />
+    <meta
+      name="keywords"
+      content="palestra di arrampicata, boulder, arrampicata indoor, arrampicata sportiva, palestra boulder Torino, corsi di arrampicata, arrampicata Cumiana, arrampicata Torino, corsi arrampicata bambini, competizioni di arrampicata, workshop arrampicata, bouldering contest, lezioni di arrampicata, allenamento arrampicata, benefici arrampicata, parete di arrampicata, crash pad arrampicata, allenamento fingerboard, arrampicata lead, arrampicata trad, arrampicata su pannello, arrampicata boulder per principianti"
+    />
+    <meta name="author" content="Andrea Bruni" />
+    <!-- Viewport Meta Tag for Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Boulder Garage | Palestra di arrampicata e Boulder a Cumiana, Torino"
+    />
+    <meta
+      property="og:description"
+      content="Vieni a divertirti in Boulder Garage, palestra di arrampicata e boulder a Cumiana (Torino)."
+    />
+    <meta property="og:url" content="https://bouldergarage.it" />
+    <meta
+      property="og:image"
+      content="https://bouldergarage.it/path/to/gym-cover-1.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Logo della palestra e muro di arrampicata in background"
+    />
+    <meta
+      property="og:site_name"
+      content="Boulder Garage | Palestra di arrampicata e Boulder a Cumiana, Torino"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-        <!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -48,58 +62,64 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-        <style></style>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script type="application/ld+json">
-{
-  "@context": "https://schema.org",  <!-- Correzione del contesto -->
-  "@type": "SportsActivityLocation",
-  "name": "Boulder Garage | Palestra di arrampicata",
-  "description": "Vieni a divertirti in Boulder Garage, palestra di arrampicata e boulder a Cumiana (Torino).",
-  "image": "https://bouldergarage.it/path/to/gym-cover-1.webp",  <!-- URL assoluto per l'immagine -->
-  "url": "https://bouldergarage.it",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Via Giusto Lanteri",
-    "addressLocality": "Cumiana",
-    "addressRegion": "TO",
-    "postalCode": "10047",
-    "addressCountry": "IT"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "44.981071",
-    "longitude": "7.370763"
-  },
-  "telephone": "+39 389 6797022",
-  "priceRange": "$$",
-  "openingHours": [
-    "Mo 14:30-22:30",
-    "We 14:30-22:30",
-    "Fr 14:30-22:30",
-    "Tu 11:30-22:30",
-    "Th 11:30-22:30",
-    "Sa 13:00-19:00",
-    "Su 13:00-19:00"
-  ],
-  "sameAs": [
-    "https://www.instagram.com/boulder__garage/"
-  ]
-}
-        </script>
-    </head>
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-    </body>
-    <ion-icon
-        name="arrow-up-circle-outline"
-        class="arrow--up"
-        onClick="scrollUp(this)"
-        loading="lazy"
-    ></ion-icon>
-    <script>
+    <style></style>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org", <!-- Correzione del contesto -->
+        "@type": "SportsActivityLocation",
+        "name": "Boulder Garage | Palestra di arrampicata",
+        "description": "Vieni a divertirti in Boulder Garage, palestra di arrampicata e boulder a Cumiana (Torino).",
+        "image": "https://bouldergarage.it/path/to/gym-cover-1.webp", <!-- URL assoluto per l'immagine -->
+        "url": "https://bouldergarage.it",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via Giusto Lanteri",
+          "addressLocality": "Cumiana",
+          "addressRegion": "TO",
+          "postalCode": "10047",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "44.981071",
+          "longitude": "7.370763"
+        },
+        "telephone": "+39 389 6797022",
+        "priceRange": "$$",
+        "openingHours": [
+          "Mo 14:30-22:30",
+          "We 14:30-22:30",
+          "Fr 14:30-22:30",
+          "Tu 11:30-22:30",
+          "Th 11:30-22:30",
+          "Sa 13:00-19:00",
+          "Su 13:00-19:00"
+        ],
+        "sameAs": ["https://www.instagram.com/boulder__garage/"]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <ion-icon
+    name="arrow-up-circle-outline"
+    class="arrow--up"
+    onClick="scrollUp(this)"
+    loading="lazy"
+  ></ion-icon>
+  <script>
     window.addEventListener("scroll", function () {
       const scrollToTopButton = document.querySelector(".arrow--up");
       const scrollPosition =
@@ -122,5 +142,5 @@
       });
       console.log(click, "click");
     }
-    </script>
+  </script>
 </html>

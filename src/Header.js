@@ -25,35 +25,35 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
   const slides = [
     {
       url: `gym-cover-1.webp`,
-      title: "Questa foto e' stata scattata da Andrea",
+      // title: "Questa foto e' stata scattata da Andrea",
     },
     {
       url: "gym-cover-2.webp",
-      title: "Questa foto e' stata scattata da Luca",
+      // title: "Questa foto e' stata scattata da Luca",
     },
     {
       url: "gym-cover-3.webp",
-      title: "Questa foto e' stata scattata da Gianmatteo",
+      // title: "Questa foto e' stata scattata da Gianmatteo",
     },
     // {
-    //   url: "gym-cover-4.webp",
+      // url: "gym-cover-4.webp",
     //   title: "Questa foto e' stata scattata da Settembrino",
     // },
     {
       url: "gym-cover-5.webp",
-      title: "Questa foto e' stata scattata da Marco Antonio",
+      // title: "Questa foto e' stata scattata da Marco Antonio",
     },
     {
       url: "gym-cover-6.webp",
-      title: "Questa foto e' stata scattata da Marco Antonio",
+      // title: "Questa foto e' stata scattata da Marco Antonio",
     },
     {
       url: "gym-cover-7.webp",
-      title: "Questa foto e' stata scattata da Marco Antonio",
+      // title: "Questa foto e' stata scattata da Marco Antonio",
     },
     {
       url: "gym-cover-8.webp",
-      title: "Questa foto e' stata scattata da Marco Antonio",
+      // title: "Questa foto e' stata scattata da Marco Antonio",
     },
   ];
 
@@ -66,11 +66,11 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
               className="w-full h-screen bg-center bg-cover"
               style={{ backgroundImage: `url(${s.url})` }}
             >
-              <div className="absolute w-full bottom-14 sd:bottom-10 md:bottom-20 lg:bottom-24">
+              {/* <div className="absolute w-full bottom-14 sd:bottom-10 md:bottom-20 lg:bottom-24">
                 <div className="flex items-center justify-center bg-transparent overflow-hidden">
                   <p className="p-2 px-5 lg:inline bg-gray-100 z-10 max-w-max w-3/4 text-sm py-2 mt-2 text-center rounded-lg text-lg text-gym-gray opacity-90">{s.title}</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </LazyLoad>
         ))}
@@ -95,7 +95,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                     LA PALESTRA
                   </Link>
                 </li>
-                <li className="">
+                {/* <li className="">
                   <Link
                     to="/chisiamo"
                     className="text-white relative text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-orange-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
@@ -103,7 +103,7 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
                   >
                     CHI SIAMO
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     to="/dovesiamo"

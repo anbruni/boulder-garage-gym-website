@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+      },
       backgroundImage: {
         "cover-img": "url('./gym-cover-1.webp')",
         logo: "url(./gym-logo-grey.webp)",
@@ -53,6 +56,10 @@ module.exports = {
         "gym-gray": "#40444e",
         "gym-orange": "#f7a600",
       },
+      borderColor: {
+        'border-gym-orange': '#f7a600',
+        'border-gym-grey': '#b2b4b8',
+      }
     },
   },
   plugins: [],

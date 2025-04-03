@@ -38,7 +38,7 @@ const LatNews = () => {
             className="min-h-auto border-section--orange bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
             ref={latNews}
         >
-            <div className="container mx-auto mb-40">
+            <div className="container mx-auto pb-40">
                 <h1 className="animate-slidein opacity-0 [--slidein-delay:800ms] font-bold mb-2 text-center flex justify-center content-center items-center py-6 pb-4 text-2xl sm:text-4xl md:text-4xl title-text">
                     <span className="title--line"></span>
                     News

@@ -54,7 +54,7 @@ const Prices = () => {
                         </tbody>
                     </table>
                 </div>
-                <h2 className="mt-10 text-l md:text-xl font-bold mb-4">CARD 10 INGRESSI</h2>
+                <h2 className="mt-10 text-l md:text-xl font-bold mb-4">TESSERA 10 INGRESSI</h2>
                 <div className="block w-full overflow-x-auto h-auto shadow-xl justify-center items-center">
                     <table className="min-w-full bg-white rounded-2xl shadow-xl">
                         <thead className="bg-gym-gray text-white rounded-t-2xl">
@@ -93,49 +93,7 @@ const Prices = () => {
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <h2 className="mt-10 md:text-xl font-bold mb-4">TARIFFE ABBONAMENTI</h2>
-                <div className="block w-full overflow-x-auto h-auto shadow-xl justify-center items-center">
-                    <table className="min-w-full bg-white rounded-2xl shadow-xl overflow-x-auto">
-                        <thead className="bg-gym-gray text-white sticky">
-                            <tr>
-                                <th className="px-1 py-3 text-left font-medium rounded-tl-2xl">
-                                    {/* Header cell for the first column */}
-                                </th>
-                                <th className="px-1 py-3 text-left text-m md:text-xl font-medium text-center">
-                                    Mensile
-                                </th>
-                                <th className="px-1 py-3 text-left text-m md:text-xl font-medium text-center">
-                                    3 Mesi
-                                </th>
-                                <th className="px-1 py-3 text-left text-m md:text-xl font-medium text-center">
-                                    6 Mesi
-                                </th>
-                                <th className="px-1 py-3 text-left text-m md:text-xl font-medium rounded-tr-2xl text-center pr-2">
-                                    12 Mesi
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {[
-                                { name: 'Intero', prices: ['€ 65', '€ 170', '€ 290', '€ 450'] },
-                                { name: 'Ridotto (Studenti)', prices: ['€ 55', '€ 145', '€ 240', '€ 360'] },
-                                { name: 'Ridotto (Under 16 & over 65)', prices: ['€ 40', '€ 125', '€ 200', '€ 320'] },
-                            ].map((row, index) => (
-                                <tr key={index} className="border-t">
-                                    <td className="pl-2 md:pl-6 pr-1 py-4 text-sm md:text-base font-baseedium text-gray-900">
-                                        {row.name}
-                                    </td>
-                                    {row.prices.map((price, i) => (
-                                        <td key={i} className="px-1 py-4 text-sm md:text-base text-gray-700 text-center">
-                                            {price}
-                                        </td>
-                                    ))}
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
+                </div>ß
             </div>
         </section>
     );

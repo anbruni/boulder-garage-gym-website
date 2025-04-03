@@ -25,8 +25,7 @@ const Courses = () => {
                 <span className="title--line"></span>
             </h1>
             <div className="flex flex-col items-start mx-4 md:mx-auto md:w-3/5 pb-8 animate-slidein opacity-0 [--slidein-delay:1200ms]">
-                <h2 className="text-l md:text-xl font-bold mb-4">I NOSTRI CORSI</h2>
-                {/* Tabella verticale per dispositivi mobili */}
+                <h2 className="text-l md:text-xl font-bold mb-4">I NOSTRI CORSI</h2>ßß
                 <div className="block w-full overflow-x-auto h-auto rounded-2xl shadow-xl justify-center items-center">
                     <table className="custom-width min-w-full bg-white rounded-2xl shadow-xl">
                         <thead className="bg-gym-gray text-white rounded-t-2xl">
@@ -84,7 +83,6 @@ const Courses = () => {
                     </table>
                 </div>
                 <span className="w-full my-6 md:my-12 border-t-4"></span>
-                {/* Tabella verticale per dispositivi mobili */}
                 <div className="block w-full overflow-x-auto h-auto rounded-2xl shadow-xl justify-center items-center">
                     <table className="custom-width min-w-full bg-white rounded-2xl shadow-xl">
                         <thead className="bg-gym-gray text-white rounded-t-2xl">
@@ -129,9 +127,9 @@ const Courses = () => {
                     </table>
                 </div>
                 <h3 className="mt-6 font-bold">ATTENZIONE!</h3>
-                <p>*Il tesseramento NON è incluso nei costi di abbonamento ai corsi.</p>
+                <p>*Il tesseramento è obbligatorio per la partecipazione ai corsi.</p>
                 <p>*Per la partecipazione ai corsi di arrampicata è obbigatorio presentare un <span className="underline underline-offset-1">certificato medico sportivo in corso di validità.</span></p>
-                <p>*Scarpette per bambini incluse nel prezzo del corso.</p>
+                <p>*Per info sui corsi rivolgersi in segreteria o telefonare al numero presente nella sezione contatti.</p>
             </div>
         </section>
     );

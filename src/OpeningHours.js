@@ -22,10 +22,8 @@ const OpeningHours = () => {
           <span className="title--line"></span>
         </h1>
         <div className="flex flex-col items-start pb-2 mx-4 md:mx-auto md:w-3/5 animate-slidein opacity-0 [--slidein-delay:1200ms]">
-          <h2 className="text-l md:text-xl font-bold mb-4">ORARIO INVERNALE - DAL 5 OTTOBRE</h2>
-          {/* Tabella verticale per dispositivi mobili */}
+          <h2 className="text-l md:text-xl font-bold mb-4">ORARIO PRIMAVERILE</h2>ß
           <div className="block w-full overflow-x-auto h-auto shadow-xl justify-center items-center">
-            {/* <div className="overflow-x-auto sm:mx-4"> */}
             <table className="min-w-full bg-white rounded-2xl shadow-xl">
               <thead className="bg-gym-gray text-white rounded-t-2xl">
                 <tr>
@@ -83,7 +81,7 @@ const OpeningHours = () => {
                     Sabato
                   </td>
                   <td className="px-6 py-4 text-l text-gray-700">
-                    13:00 - 19:00
+                    CHIUSO (salvo maltempo)
                   </td>
                 </tr>
                 <tr className="border-t">
@@ -91,34 +89,11 @@ const OpeningHours = () => {
                     Domenica
                   </td>
                   <td className="px-6 py-4 text-l text-gray-700">
-                    13:00 - 19:00
+                    CHIUSO (salvo maltempo)
                   </td>
                 </tr>
               </tbody>
             </table>
-            {/* </div> */}
-          </div>
-          {/* Giorni di chiusura */}
-          <div className="py-6 md:w-3/5 animate-slidein opacity-0 [--slidein-delay:1200ms]">
-            <h2 className="text-l font-semibold mb-4">
-              Ricorda, siamo chiusi nei seguenti giorni:
-            </h2>
-            <ul className="list-disc text-l list-inside space-y-2">
-              <li>
-                <span className="font-medium">1 novembre 2024</span> - Tutti i Santi
-              </li>
-              <li>
-                <span className="font-medium">8 dicembre 2024</span> - Immacolata
-                Concezione
-              </li>
-              <li>
-                <span className="font-medium">25 dicembre 2024</span> - Natale
-              </li>
-              <li>
-                <span className="font-medium">26 dicembre 2024</span> - Santo
-                Stefano
-              </li>
-            </ul>
           </div>
         </div>
       </section>

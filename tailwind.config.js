@@ -48,11 +48,12 @@ module.exports = {
       },
       animation: {
         slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
-        // slidein500: "slidein 1s ease 500ms",
-        // slidein700: "slidein 1s ease 700ms",
-        // slidein900: "slidein 1s ease 1500ms",
       },
       colors: {
+        "gym-gray": "#40444e",
+        "gym-orange": "#f7a600",
+      },
+      backgroundColors: {
         "gym-gray": "#40444e",
         "gym-orange": "#f7a600",
       },

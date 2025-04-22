@@ -93,7 +93,7 @@ const Prices = () => {
                             </tr>
                         </tbody>
                     </table>
-                </div>ß
+                </div>
             </div>
         </section>
     );

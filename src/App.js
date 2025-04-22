@@ -95,7 +95,7 @@ const Home = () => {
         </span>
         <span className="title--line"></span>
       </h1>
-      <div className="animate-slidein opacity-0 [--slidein-delay:1100ms] flex flex-col-reverse lg:grid grid-cols-[1fr_2fr]">
+      <div className="animate-slidein opacity-0 [--slidein-delay:1100ms] flex flex-col-reverse lg:grid grid-cols-[40%_60%]">
         <div className="grid grid-cols-2 justify-items-stretch justify-between px-3 mx-auto lg:pl-10 h-fit w-fit gap-2 lg:gap-5 mb-10 lg:mb-0">
           {cardItems.map((card, index) => {
             return (

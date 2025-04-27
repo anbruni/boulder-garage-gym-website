@@ -33,6 +33,7 @@ module.exports = {
 
         "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
+        'landscape-mode': {'raw': '(orientation: landscape)'},
       },
       keyframes: {
         slidein: {
@@ -63,5 +64,9 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('landscape-mode', '.landscape-mode &');
+    },
+  ],
 };

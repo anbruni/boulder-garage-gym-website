@@ -24,7 +24,7 @@ const Courses = () => {
                 <span className="text-xl md:text-2xl lg:text-3xl title-text">Corsi</span>
                 <span className="title--line"></span>
             </h1>
-            <div className="flex flex-col items-start mx-4 md:mx-auto md:w-3/5 pb-8 animate-slidein opacity-0 [--slidein-delay:1200ms]">
+            <div className="flex flex-col items-start mx-4 md:mx-auto md:w-4/5 pb-8 animate-slidein opacity-0 [--slidein-delay:1200ms]">
                 <h2 className="text-l md:text-xl font-bold mb-4">I NOSTRI CORSI</h2>
                 <div className="block w-full overflow-x-auto h-auto rounded-2xl shadow-xl justify-center items-center">
                     <table className="custom-width min-w-full bg-white rounded-2xl shadow-xl">

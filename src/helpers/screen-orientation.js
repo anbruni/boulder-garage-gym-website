@@ -10,12 +10,12 @@ const hideHeaderLandscape = () => {
   let navLinks = document.querySelector(".nav-links");
   
   window.addEventListener('scroll', () => {
-    console.log("scroll")
     if (window.matchMedia("(orientation: landscape)").matches) {
     if (window.scrollY > lastScrollY && window.scrollY > 5 && window.innerWidth < 1024) {
       console.log(window.scrollY,"window.scrollY")
       header.style.top = "-100px";
       navLinks.style.visibility = "hidden"
+      navLinks.classList.add("pl-50")
     } else {
       header.style.top = "0px";
       navLinks.style.visibility = "visible"

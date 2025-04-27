@@ -21,6 +21,9 @@ const hideHeaderLandscape = () => {
       navLinks.style.visibility = "visible"
     }
     lastScrollY = window.scrollY;
+  }else {
+    header.style.top = "0px";
+    navLinks.style.visibility = "visible"
   }
   });
   }

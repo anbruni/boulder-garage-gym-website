@@ -9,6 +9,7 @@ import useScreenOrientation from "./helpers/screen-orientation";
 
 const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
   const currOrientation = useScreenOrientation();
+  console.log(currOrientation, "currOrientation")
 
   const handleClick = (e) => {
     var iconName = document.querySelector("#menu-icon");
@@ -84,18 +85,24 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
             (s) => s.orientation === currOrientation || s.orientation === "any"
           )
           .map((s, index) => (
-            <LazyLoad key={index} height="400px" offsetVertical={300}>
-              <div
-                className="w-full h-screen bg-center bg-cover"
-                style={{ backgroundImage: `url(${s.url})` }}
-              >
-                {/* <div className="absolute w-full bottom-14 sd:bottom-10 md:bottom-20 lg:bottom-24">
+            <LazyLoad
+            key={index}
+            height={window.innerHeight}
+            offset={300}
+            once
+            placeholder={<div className="h-screen w-full bg-gray-200" />}
+          >
+            <div
+              className="w-full h-screen bg-center bg-cover"
+              style={{ backgroundImage: `url(${s.url})` }}
+            >
+              {/* <div className="absolute w-full bottom-14 sd:bottom-10 md:bottom-20 lg:bottom-24">
                 <div className="flex items-center justify-center bg-transparent overflow-hidden">
                   <p className="p-2 px-5 lg:inline bg-gray-100 z-10 max-w-max w-3/4 text-sm py-2 mt-2 text-center rounded-lg text-lg text-gym-gray opacity-90">{s.title}</p>
                 </div>
               </div> */}
               </div>
-            </LazyLoad>
+          </LazyLoad>
           ))}
       </ImageSlider>
       <section className="header-container bg-opacity-30">

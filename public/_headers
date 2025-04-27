@@ -1,0 +1,2 @@
+/*.(jpg|jpeg|webp|avif)
+Cache-Control: public, max-age=2592000, immutable

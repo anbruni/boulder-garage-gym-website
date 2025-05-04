@@ -23,7 +23,7 @@ function Footer() {
             </li>
             <li className="flex content-center items-center gap-x-3">
               <ion-icon class="li--icon" name="map-outline"></ion-icon>
-              Via Giusto Lanteri, Cumiana, TO - 10047
+              Via Giusto Lanteri, Cumiana, TO - 10040
             </li>
             <li className="flex content-center items-center gap-x-3">
               <ion-icon class="li--icon" name="call-outline"></ion-icon>

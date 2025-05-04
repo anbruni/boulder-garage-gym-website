@@ -1,0 +1,16 @@
+[[redirects]]
+  from = "http://bouldergarage.it/*"
+  to = "https://www.bouldergarage.it/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://bouldergarage.it/*"
+  to = "https://www.bouldergarage.it/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

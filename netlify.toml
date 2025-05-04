@@ -3,14 +3,17 @@
   to = "https://www.bouldergarage.it/:splat"
   status = 301
   force = true
+  priority = 10
 
 [[redirects]]
   from = "https://bouldergarage.it/*"
   to = "https://www.bouldergarage.it/:splat"
   status = 301
   force = true
+  priority = 10
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  priority = 1

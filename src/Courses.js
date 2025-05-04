@@ -82,7 +82,7 @@ const Courses = () => {
                         </tbody>
                     </table>
                 </div>
-                <span className="w-full my-6 md:my-12 border-t-4"></span>
+                {/* <span className="w-full my-6 md:my-12 border-t-4"></span>
                 <div className="block w-full overflow-x-auto h-auto rounded-2xl shadow-xl justify-center items-center">
                     <table className="custom-width min-w-full bg-white rounded-2xl shadow-xl">
                         <thead className="bg-gym-gray text-white rounded-t-2xl">
@@ -125,7 +125,7 @@ const Courses = () => {
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> */}
                 <h3 className="mt-6 font-bold">ATTENZIONE!</h3>
                 <p>*Il tesseramento è obbligatorio per la partecipazione ai corsi.</p>
                 <p>*Per la partecipazione ai corsi di arrampicata è obbigatorio presentare un <span className="underline underline-offset-1">certificato medico sportivo in corso di validità.</span></p>

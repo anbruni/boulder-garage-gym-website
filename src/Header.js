@@ -30,50 +30,62 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
     {
       orientation: "landscape-primary",
       url: `gym-cover-1.webp`,
+      alt: "Immagine di copertina 1, interni della palestra Boulder Garage",
     },
     {
       orientation: "any",
       url: "gym-cover-2.webp",
+      alt: "Immagine di copertina 2, interni della palestra Boulder Garage",
     },
     {
       orientation: "landscape-primary",
       url: "gym-cover-3.webp",
+      alt: "Immagine di copertina 3, interni della palestra Boulder Garage",
     },
     {
       orientation: "landscape-primary",
       url: "gym-cover-4.webp",
+      alt: "Immagine di copertina 4, interni della palestra Boulder Garage",
     },
     {
-      orientation: "landscape-primary",
+      orientation: "any",
       url: "gym-cover-5.webp",
+      alt: "Immagine di copertina 5, interni della palestra Boulder Garage",
     },
     {
       orientation: "any",
       url: "gym-cover-6.webp",
+      alt: "Immagine di copertina 6, interni della palestra Boulder Garage",
     },
     {
       orientation: "landscape-primary",
       url: "gym-cover-7.webp",
+      alt: "Immagine di copertina 7, interni della palestra Boulder Garage",
     },
     {
       orientation: "portrait-primary",
       url: "gym-cover-8.webp",
+      alt: "Immagine di copertina 8, interni della palestra Boulder Garage",
     },
     {
       orientation: "landscape-primary",
       url: "gym-cover-9.webp",
+      alt: "Immagine di copertina 9, interni della palestra Boulder Garage",
     },
     {
       orientation: "portrait-primary",
       url: "gym-cover-10.webp",
+      alt: "Immagine di copertina 10, interni della palestra Boulder Garage",
     },
     {
       orientation: "portrait-primary",
       url: "gym-cover-11.webp",
+      alt: "Immagine di copertina 11, interni della palestra Boulder Garage",
     },
     {
       orientation: "portrait-primary",
       url: "gym-cover-12.webp",
+      alt: "Immagine di copertina 12, interni della palestra Boulder Garage",
     },
   ];
 
@@ -95,12 +107,9 @@ const Header = ({ scrollToSection }, isNavbarOpen, toggleNavbar) => {
             <div
               className="w-full h-screen bg-center bg-cover"
               style={{ backgroundImage: `url(${s.url})` }}
+              role="img"
+              aria-label={s.alt}
             >
-              {/* <div className="absolute w-full bottom-14 sd:bottom-10 md:bottom-20 lg:bottom-24">
-                <div className="flex items-center justify-center bg-transparent overflow-hidden">
-                  <p className="p-2 px-5 lg:inline bg-gray-100 z-10 max-w-max w-3/4 text-sm py-2 mt-2 text-center rounded-lg text-lg text-gym-gray opacity-90">{s.title}</p>
-                </div>
-              </div> */}
               </div>
           </LazyLoad>
           ))}

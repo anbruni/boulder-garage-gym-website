@@ -13,8 +13,8 @@
   priority = 10
 
 [[redirects]]
-  from = "/robot.txt"
-  to = "/robot.txt"
+  from = "/robots.txt"
+  to = "/robots.txt"
   status = 200
   priority = 5
 
